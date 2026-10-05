@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f6f8; color: #222; }
+
+.topbar { display: flex; align-items: center; gap: 24px; padding: 12px 24px; background: #1f3a5f; color: #fff; flex-wrap: wrap; }
+.topbar .brand { color: #fff; font-weight: 700; text-decoration: none; font-size: 17px; }
+.topbar nav { display: flex; gap: 16px; flex: 1; flex-wrap: wrap; }
+.topbar nav a { color: #cfdcef; text-decoration: none; font-size: 14px; }
+.topbar nav a.active, .topbar nav a:hover { color: #fff; text-decoration: underline; }
+.topbar .session { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.topbar .session a { color: #fff; }
+.topbar button { background: #3c5f8f; color: #fff; border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer; }
+
+.container { max-width: 1080px; margin: 24px auto; padding: 0 16px; }
+.narrow { max-width: 560px; }
+
+h1 { font-size: 22px; } h2 { font-size: 17px; margin-top: 28px; } h3 { font-size: 15px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+.card { background: #fff; border: 1px solid #e2e5ea; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.card h2, .card h3 { margin-top: 0; }
+.card h2 a { color: #1f3a5f; text-decoration: none; }
+
+.meta { color: #667; font-size: 13px; }
+.hint { color: #778; font-size: 13px; }
+.error { color: #b3261e; }
+.ok { color: #1a7f37; }
+.purpose { max-width: 220px; white-space: pre-wrap; font-size: 13px; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid #e2e5ea; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #eef1f5; }
+
+form label { display: block; margin: 12px 0 4px; font-size: 14px; }
+form input, form select, form textarea { display: block; width: 100%; margin-top: 4px; padding: 8px; border: 1px solid #c9cfd8; border-radius: 4px; font-size: 14px; }
+form .checkbox { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+form .checkbox input { width: auto; margin: 0; }
+fieldset { border: 1px solid #d8dde4; border-radius: 6px; margin: 12px 0; }
+
+button, .button { background: #1f3a5f; color: #fff; border: none; padding: 9px 18px; border-radius: 5px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; margin-top: 8px; }
+button.small, .button.small { padding: 4px 10px; font-size: 13px; margin-top: 0; }
+button.danger { background: #b3261e; }
+button:disabled { background: #9aa4b2; cursor: not-allowed; }
+
+.tag { background: #fde7e9; color: #b3261e; border-radius: 4px; font-size: 12px; padding: 1px 6px; margin-left: 6px; }
+.status { font-size: 13px; padding: 2px 8px; border-radius: 10px; }
+.status.pending { background: #fff4d6; color: #8a6d00; }
+.status.approved { background: #dcf5e3; color: #1a7f37; }
+.status.rejected { background: #fde7e9; color: #b3261e; }
+
+details { margin-top: 10px; }
+summary { cursor: pointer; color: #1f3a5f; }
